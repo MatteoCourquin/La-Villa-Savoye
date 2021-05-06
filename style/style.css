@@ -114,12 +114,6 @@ header a{
 	#lignes{
 		display: none;
 	}
-	#burger_ico{
-		display: block;
-	}
-	#buttons{
-		display: none;
-	}
 	h1{
 		margin-bottom: 0px;
 		padding: 30px;

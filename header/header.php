@@ -1,5 +1,5 @@
 <header>
-	<a href="../index.html"><img src="../images/header/logo.png" alt="logo home"></a>
+	<a href="../index.php"><img src="../images/header/logo.png" alt="logo home"></a>
 	
 	<img src="../images/header/burger.png" alt="logo burger" id="burger_ico">
 		
