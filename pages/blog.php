@@ -3,17 +3,15 @@
 	<head>
 		<title>Blog</title>
 		<link rel="stylesheet" type="text/css" href="style/blog.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta charset="utf-8">
 	</head>
 
 	<body>
-		<header>
-			<a href="./index.html"><img src="logos/home.png" alt="logo home"></a>
-			<a href="./histoire.html">History</a>
-			<a href="./galerie.html">Gallery</a>
-			<a href="./blog.html" id="title">Blog</a>
-			<a href="./contact.html">Contact</a>
-		</header>
+		
+		<?php
+		include('../header/header.php');
+		?>
 
 		<section>
 			<div id="texte1">

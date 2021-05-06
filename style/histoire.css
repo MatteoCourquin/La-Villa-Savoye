@@ -3,18 +3,6 @@
 	margin: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------ Main ------------------------ */
 
 /* Fond */
@@ -72,11 +60,14 @@ h2{
 h3{
 	font-family: 'Avenir', sans-serif;
 	font-weight: bold;
+	font-size: 23px;
+	margin: 10px;
 }
 
 p{
 	font-family: 'Avenir';
-
+	font-size: 16px;
+	margin-bottom: 50px;
 }
 
 
@@ -87,6 +78,7 @@ p{
 		display: none;
 	}
 	#texte{
+		margin: 0% 5% 0% 5%;
 		width: 80%;
 	}
 }
@@ -94,10 +86,22 @@ p{
 @media screen and (max-width: 700px){
 	#lavillasavoye{
 		display: none;
+		width: 15px;
+		height: 15px;
 	}
 	#texte{
-		width: 80%;
+		width: 90%;
+		margin: 0%;
+		top: 520px;
+		padding: 5%;
 	}
+	h1{
+		margin-top: 100px
+	}
+	h2{
+		top: 0px;
+	}
+	
 }
 
 
