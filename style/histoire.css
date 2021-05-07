@@ -3,7 +3,7 @@
 	margin: 0px;
 }
 
-/* ------------------------ Main ------------------------ */
+/* ------------------------------ Main ------------------------------ */
 
 /* Fond */
 
@@ -105,123 +105,10 @@ p{
 }
 
 
+/* ------------------------------ Footer ------------------------------ */
 
-
-
-
-
-
-
-
-
-
-
-/*
-*{
-	padding: 0;
-	margin: 0;
-	font-family: courier new;
-}
-
-body{
-	background: url(../images/image-de-fond.jpg) no-repeat;
-	background-size: cover;
-	background-position: center; 
-	background-attachment: fixed;
-}
-
-header{
-	margin-top: 90px;
-	width: 100%;
-	height: 120px;
-	background-color: black;
-	opacity: 0.8;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-a img:hover{
-	height: 70px;
-	width: 70px;
-	transition: 0.3s;
-}
-
-a:hover{
-	font-size: 43px;
-	cursor: pointer;
-	transition: 0.3s;
-}
-
-header a{
-	text-decoration: none;
-	font-family: courier new;
-	font-size: 40px;
-	color: white;
-}
-
-header img{
-	height: 60px;
-	width: 60px;
-}
-
-#title{
-	font-size: 60px;
-}
-
-#texte1{
-	background-color: black;
-	margin-top: 30px;
-	margin-left: 45%;
-	padding: 10px;
-	text-align: justify;
-	opacity: 0.8;
-	width: 50%;
-}
-
-#texte2{
-	background-color: black;
-	margin-top: 30px;
-	margin-left: 4%;
-	padding: 10px;
-	text-align: justify;
-	opacity: 0.8;
-	width: 50%;
-}
-
-#texte3{
-	background-color: black;
-	margin-top: 30px;
-	margin-left: 45%;
-	margin-bottom: 30px;
-	padding: 10px;
-	text-align: justify;
-	opacity: 0.8;
-	width: 50%;
-}
-
-
-h2{
-	color: white;
-	font-size: 20px;
-	margin: 10px;
-}
-
-p{
-	margin: 10px;
-	color: white;
-	font-size: 20px;
-}
-
-#texte1 li{
-	margin: 15px;
-	color: white;
-	font-size: 15px;
-}
-
-footer iframe{
+/* footer iframe{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30px;
 } */

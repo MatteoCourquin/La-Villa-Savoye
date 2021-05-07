@@ -5,12 +5,48 @@
 
 /* ---------------- Main ---------------- */
 
-#zoneimage{
+main{
+	width: 100%;
+	position: absolute;
 	top: 120px;
 }
 
+#zoneimage{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}	
 
 .image{
 	object-fit: cover;
-	width: 200px;
+	width: 90%;
+	padding: 5%;
+}
+
+h2{
+	position: relative;
+	width: 250px;
+	height: 50px;
+	margin-left: 45%;
+	margin-top: -70px;
+	text-align: center;
+	padding-top: 15px;
+	background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 10px );
+	border-radius: 8px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+@media screen and (max-width: 1300px){
+	#zoneimage{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}		
+}
+
+@media screen and (max-width: 800px){
+	#zoneimage{
+		display: grid;
+		grid-template-columns: 1fr;
+	}		
 }
