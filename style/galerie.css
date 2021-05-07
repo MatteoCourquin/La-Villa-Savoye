@@ -19,23 +19,50 @@ main{
 .image{
 	object-fit: cover;
 	width: 90%;
-	padding: 5%;
+	margin: 5%;
+	box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 h2{
 	position: relative;
-	width: 250px;
+	/* Police / Texte */
+	font-family: 'Exo', sans-serif;
+	font-weight: 200;
+	font-size: 20px;
+	color: white;
+	text-shadow: -2px 2px 8px rgba(0, 0, 0, 0.838);
+	/* Taille / Positionnement */
+	width: 330px;
 	height: 50px;
-	margin-left: 45%;
+	margin-left: auto;
+	margin-right: 2%;
 	margin-top: -70px;
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 22px;
+	/* Effet Glassmorphisme */
 	background: rgba( 255, 255, 255, 0.25 );
-	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-	backdrop-filter: blur( 10px );
-	border-radius: 8px;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	backdrop-filter: blur( 8px );
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+/* Lightbox */
+
+#lightbox{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 800px;
+	z-index: 90;
+	/* Effet glassmorphisme  */
+	background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 0px 0px 0 rgba( 0, 0, 0, 0.37 );
+	backdrop-filter: blur( 8px );
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+/* ----------------------- Responsive ----------------------- */
 
 @media screen and (max-width: 1300px){
 	#zoneimage{

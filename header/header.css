@@ -27,7 +27,8 @@ header li{
 }
 
 header ul{
-	font-family: 'Arial', sans-serif;
+	font-family: 'Exo', sans-serif;
+	font-weight: 300;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -36,7 +37,7 @@ header ul{
 header a{
 	text-decoration: none;
 	color: #282933;
-	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* Menu burger */

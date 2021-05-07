@@ -1,3 +1,6 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
+
 <header>
 	<a href="../index.php"><img src="../images/header/logo.png" alt="logo home"></a>
 	
