@@ -2,7 +2,9 @@
 <html lang="fr">
 	<head>
 		<title>Contact</title>
-		<link rel="stylesheet" type="text/css" href="style/contact.css">
+		<link rel="stylesheet" type="text/css" href="../style/contact.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;600&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta charset="utf-8">
 	</head>
@@ -13,7 +15,7 @@
 		include('../header/header.php');
 		?>
 
-		<section>
+		<section id="zoneContact">
 			
 			<div class="champs">
 			<label>Last name and first name :</label>
@@ -42,14 +44,6 @@
     		<button id="bouton">Send</button>
 
 		</section>
-
-		<footer id="logos">
-			<a href="https://www.facebook.com/VillaSavoyeOfficiel" target="_blank"><img src="logos/facebook.png" alt="logo facebook"></a>
-			<a href="https://www.instagram.com/explore/locations/228788259/villa-savoye/" target="_blank"><img src="logos/instagram.png" alt="logo instagram"></a>
-			<a href="https://goo.gl/maps/NHNkr6udSajSA6Yj9" target="_blank"><img src="logos/loca.png" alt="logo map"></a>
-			<a href="mailto:matteo.courquin@edu.devinci.fr" ><img src="logos/mail.png" alt="logo mail"></a>
-			<a href="tel:+33652647110"><img src="logos/telephone.png" alt="logo telephone"></a>
-		</footer>
-		<script type="text/javascript" src="script/contact.js"></script>
+		<script type="text/javascript" src="../script/contact.js"></script>
 	</body>
 </html> 

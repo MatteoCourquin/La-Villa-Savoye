@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<title>Blog</title>
-		<link rel="stylesheet" type="text/css" href="style/blog.css">
+		<link rel="stylesheet" type="text/css" href="../style/blog.css">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta charset="utf-8">
 	</head>
@@ -13,7 +13,7 @@
 		include('../header/header.php');
 		?>
 
-		<section>
+		<!-- <section>
 			<div id="texte1">
 				<h1>News on La Villa Savoye!</h1>
 
@@ -25,9 +25,7 @@
 
 				Called the "Heures Claires", Villa Savoye Le Corbusier thus completes the architect's cycle of white villas. Like the other villas in this cycle, it is the culmination of a reflection on the habitat carried out for ten years by the famous architect who wants to offer his sponsors an architecture that is "pure, clean, clean and healthy ”. You might get inspired for your own arrangements!</p>
 			</div>	
-
-			<img src="images/photo1.jpg" alt="Photo de la villa">
-		</section>
+		</section> -->
 
 	</body>
 </html>

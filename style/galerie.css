@@ -14,6 +14,7 @@ main{
 #zoneimage{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 50px;
 }	
 
 .image{
@@ -27,7 +28,7 @@ h2{
 	position: relative;
 	/* Police / Texte */
 	font-family: 'Exo', sans-serif;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 20px;
 	color: white;
 	text-shadow: -2px 2px 8px rgba(0, 0, 0, 0.838);
@@ -43,22 +44,127 @@ h2{
 	background: rgba( 255, 255, 255, 0.25 );
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 	backdrop-filter: blur( 8px );
-	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 
 /* Lightbox */
 
-#lightbox{
+.lightbox{
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: 800px;
-	z-index: 90;
+	height: 1000px;
+	z-index: 80;
 	/* Effet glassmorphisme  */
-	background: rgba( 255, 255, 255, 0.25 );
-	box-shadow: 0 0px 0px 0 rgba( 0, 0, 0, 0.37 );
+	background: rgba(255, 255, 255, 0.25);
 	backdrop-filter: blur( 8px );
-	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.close{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 0px;
+	right: 25%;
+}
+
+.imagebox{
+	width: 50%;
+	height: auto;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+/* Zone commentaire */
+
+#zonecomm{
+	margin-top: 20px;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: space-between;
+}
+
+#pseudo{
+	font-family: 'Exo';
+	font-weight: 500;
+	font-size: 25px;
+	padding: 20px;
+	width: 10%;
+	margin-left: 20px;
+	background: #e0e0e0;
+	box-shadow: inset 20px 20px 60px #e3e3e3, inset -20px -20px 60px #ffffff;
+}
+
+#commentaire{
+	font-family: 'Exo';
+	font-weight: 400;
+	font-size: 15px;
+	padding: 10px;
+	width: 70%;
+	background: #e0e0e0;
+	box-shadow: inset 20px 20px 60px #e3e3e3, inset -20px -20px 60px #ffffff;
+}
+
+#date_heure{
+	width: 20%;
+	height: 50px;
+	font-family: 'exo', sans-serif;
+}
+
+#delete{
+	width: 5%;
+	height: 50px;
+}
+
+#croixcomm{
+	width: 20px;
+	height: 20px;
+}
+
+form{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+
+#pseudo_{
+	font-family: 'Exo';
+	font-weight: 400;
+	font-size: 15px;
+	width: 200px;
+	height: 50px;
+	border: 0px;
+	outline: none;
+	border-radius: 50px;
+	background: #e0e0e0;
+	box-shadow: inset 20px 20px 60px #e3e3e3, inset -20px -20px 60px #ffffff;
+	padding-left: 25px;
+}
+
+#comm_{
+	font-family: 'Exo';
+	font-weight: 400;
+	font-size: 15px;
+	width: 70%;
+	height: 50px;
+	border: 0px;
+	outline: none;
+	border-radius: 50px;
+	background: #e0e0e0;
+	box-shadow: inset 20px 20px 60px #e3e3e3, inset -20px -20px 60px #ffffff;
+	padding-left: 25px;
+}
+
+#send{
+	font-family: 'Exo';
+	font-weight: 500;
+	font-size: 20px;
+	width: 10%;
+	color: white;
+	border: 0px;
+	border-radius: 25px;
+	background-color: rgb(22, 22, 189);
 }
 
 
