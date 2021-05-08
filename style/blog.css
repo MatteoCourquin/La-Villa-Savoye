@@ -3,14 +3,27 @@
 	margin: 0;
 }
 
+#zone_article{
+	position: absolute;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
 
+.article{
+	font-family: 'exo';
+	padding: 20px;
+	text-align: justify;
+}
 
+h1{
+	text-align: start;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
-
-
-
-
-
-
-
-
+img{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+}

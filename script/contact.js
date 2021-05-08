@@ -7,7 +7,7 @@ var zoneVerif4 = document.getElementById('zone_verif_4');
 var nom = document.getElementById('nom');
 var age = document.getElementById('age');
 var email = document.getElementById('email');
-var tel = document.getElementById('telephone');
+var tel = document.getElementById('phone');
 var bouton = document.getElementById('bouton');
 
 
@@ -28,6 +28,7 @@ function validation1() {
 	if(nom.value.length < 3) {
 		message = message + 'Le nom et prénom doivent contenir au moins 3 caractères<br />';
 		zoneVerif1.innerHTML = message;
+		nom.style.background = '#ff6464';
 	}
 
 	else {
@@ -43,6 +44,7 @@ function validation2() {
 	if(parseInt(age.value) < 18 || age.value == '') {
 		message = message + 'Vous devez être majeur.<br />';
 		zoneVerif2.innerHTML = message;
+		age.style.background = '#ff6464'
 	}
 
 	else {
@@ -58,6 +60,7 @@ function validation3() {
 	if(formatEmail(email.value) == false) {
 		message = message + 'Veuillez entrer un email.<br />';
 		zoneVerif3.innerHTML = message;
+		email.style.background = '#ff6464'
 	}
 
 	else {
@@ -73,6 +76,7 @@ function validation4() {
 	if(formatTel(tel.value) == false) {
 		message = message + 'Veuillez entrer un numéro de téléphone.<br />';
 		zoneVerif4.innerHTML = message;
+		tel.style.background = '#ff6464'
 	}
 
 	else {

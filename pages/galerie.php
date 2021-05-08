@@ -100,9 +100,7 @@
 
 			<form method="post">
 				<input id="pseudo_" type="text" name="pseudo" placeholder="Pseudo" required>
-				<br><br>
 				<input id="comm_" type="text" name="message" placeholder="Message" required></input>
-				<br><br>
 				<input type="submit" value="SEND" id="send">
 			</form>
 			
