@@ -2,8 +2,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
 
 <header>
-	<a href="../index.php"><img src="../images/header/logo.png" alt="logo home"></a>
-	
+	<a href="../index.php"><img src="../images/header/logo.svg" alt="logo home"></a>
+
 	<img src="../images/header/burger.png" alt="logo burger" id="burger_ico">
 		
 	<ul id="menu">
