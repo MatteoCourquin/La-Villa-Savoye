@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<title>History</title>
-		<link rel="stylesheet" type="text/css" href="../style/histoire.css">
+		<link rel="stylesheet" type="text/css" href="../style/style2.css">
 		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta charset="utf-8">

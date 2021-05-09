@@ -3,7 +3,7 @@
 	<head>
 		<title>Contact</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="stylesheet" type="text/css" href="../style/contact.css">
+		<link rel="stylesheet" type="text/css" href="../style/style2.css">
 		<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;600&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta charset="utf-8">
@@ -24,7 +24,7 @@
 
 		<section id="zoneContact">
 
-			<form id="form">
+			<form id="form_contact">
 
 				<h1>CONTACT US</h1>
 
@@ -60,7 +60,7 @@
 
 				</div>
 				
-				<button id="bouton">Send</button>
+				<button id="submit">Send</button>
 				
 			</form>
 			

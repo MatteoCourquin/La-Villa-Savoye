@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<title>Gallery</title>
-		<link rel="stylesheet" type="text/css" href="../style/galerie.css">
+		<link rel="stylesheet" type="text/css" href="../style/style2.css">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;600&display=swap" rel="stylesheet">
@@ -80,7 +80,7 @@
 
 				$pdo = new PDO('mysql:host=localhost;dbname=laVillaSavoye', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
-				if(isset($_GET["id_commentarie"])){$id = $_GET["id_commentarie"] ; $pdo->exec("DELETE FROM comms WHERE id =" . $id . "");};                    
+				if(isset($_GET["id_commentarie"])){$id = $_GET["id_commentarie"] ; $pdo->exec("DELETE FROM comms WHERE id_commentarie =' . $id . '");};                    
 
 				if($_POST){
 					$_POST['pseudo'] = addslashes(($_POST['pseudo']));
@@ -98,7 +98,7 @@
 			?>
 
 
-			<form method="post">
+			<form id="form_commentaire" method="post">
 				<input id="pseudo_" type="text" name="pseudo" placeholder="Pseudo" required>
 				<input id="comm_" type="text" name="message" placeholder="Message" required></input>
 				<input type="submit" value="SEND" id="send">
