@@ -321,6 +321,7 @@ h2{
 
 #message{
 	height: 270px;
+	max-height: 270px;
 	font-family: 'exo';
 	padding-top: 10px;
 }
