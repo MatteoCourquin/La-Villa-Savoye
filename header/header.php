@@ -7,7 +7,44 @@
 	<img src="../images/header/burger.png" alt="logo burger" id="burger_ico">
 		
 	<ul id="menu">
+
+
+	<?php
+	require './log.php';
+			forcing_user_connected();
 		
+			$error = null;
+			if(!empty($_POST['pseudo']) && !empty($_POST['password'])) {
+				if ($_POST['pseudo'] === 'Matteo' && $_POST['password'] === '0000') {
+					session_start();
+					$_SESSION['connected'] = 1;
+					header('Location: ./galerie.php');
+					// Conexion
+				} else {
+					$error = 'error';
+					// Return error
+				}
+			}
+			?>
+
+		<?php if ($error) { ?>
+
+			<p>erreur</p>
+
+		<?php } ?>
+
+		<form action="" method="post">
+			<div class="form-group">
+				<input type="text" name="pseudo" placeholder="User">    
+			</div>
+			<div class="form-group">
+				<input type="password" name="password" placeholder="Password">    
+			</div>
+			<button type="submit">Connected</button>
+		</form>
+
+
+
 		<li><a href="../pages/galerie.php">Gallery</a></li>
 		<li><a href="../pages/histoire.php">History</a></li>
 		<li><a href="../pages/blog.php">blog</a></li>

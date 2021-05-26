@@ -13,9 +13,22 @@
 
 		<?php	
 			include('../header/header.php');
-		?>
+		?>	
+				
 
+		
 		<main>
+			<?php
+			
+			if ($_SESSION['connected'] = 1){
+				echo 'connected';
+			} else{
+				echo 'not connected';
+			}
+
+			?>
+
+
 			<div id="zoneimage">
 				<div>
 					<img class="image" id="image1" src="../images/galerie/photo1.jpg" alt="Photo de la villa savoye">
@@ -108,15 +121,3 @@
 		<script src="../script/galerie.js"></script>
 	</body>
 </html>
-
-
-
-
-
-
-
-
-			
-			
-			
-			

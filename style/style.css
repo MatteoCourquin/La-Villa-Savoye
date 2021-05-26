@@ -49,6 +49,11 @@ button{
 	width: 250px;
 	height: 80px;
 	border: 1.5px solid black;
+	text-decoration: none;
+	font-family: 'exo';
+	font-weight: 300;
+	font-size: 30px;
+	color: black;
 	cursor: pointer;
 	margin: 5px;
 	background: rgba( 255, 255, 255, 0.00 );
@@ -61,13 +66,6 @@ button:hover{
 	opacity: 0.8;
 }
 
-header a{
-	text-decoration: none;
-	font-family: 'exo';
-	font-weight: 300;
-	font-size: 30px;
-	color: black;
-}
 
 
 @media screen and (max-width: 700px){

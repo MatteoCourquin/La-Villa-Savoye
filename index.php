@@ -19,10 +19,10 @@
 			<header>	
 				<h1><span>LA </span><span> VILLA </span><span> SAVOYE</span></h1>	
 				<div id="buttons">
-					<button class="boutton"><a href ="pages/histoire.php">History</a></button>
-					<button class="boutton"><a href ="pages/galerie.php">Gallery</a></button>
-					<button class="boutton"><a href ="pages/blog.php">blog</a></button>
-					<button class="boutton"><a href ="pages/contact.php">contact</a></button>
+					<a href ="pages/histoire.php"><button class="boutton">History</button></a>
+					<a href ="pages/galerie.php"><button class="boutton">Gallery</button></a>
+					<a href ="pages/blog.php"><button class="boutton">blog</button></a>
+					<a href ="pages/contact.php"><button class="boutton">contact</button></a>
 				</div>
 			</header>
 		</div>	
