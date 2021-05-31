@@ -2,44 +2,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
 
 <header>
-	<a href="../index.php"><img src="../assets/images/logos/logo.svg" alt="logo home"></a>
+	<a href="../index.php"><img src="../assets/images/logos/logo.svg" alt="logo home" id='logoVilla'></a>
 
 	<img src="../assets/images/logos/burger.png" alt="logo burger" id="burger_ico">
 		
 	<ul id="menu">
-
-		<li>
-			<?php
-				$error = null;
-				if(!empty($_POST['id']) && !empty($_POST['password'])) {
-					if ($_POST['id'] === 'Matteo' && $_POST['password'] === '0000') {
-						session_start();
-						$_SESSION['connected'] = 1;
-						header('Location: ./galerie.php');
-						// Conexion
-					} else {
-						$error = 'error';
-						// Return error
-					}
-				}
-			?>
-
-			<?php if ($error) { ?>
-				<p>erreur</p>
-			<?php } ?>
-
-			<form action="" method="post">
-				<div class="form-group">
-					<input type="text" name="id" placeholder="User">    
-				</div>
-				<div class="form-group">
-					<input type="password" name="password" placeholder="Password">    
-				</div>
-				<button type="submit">Connected</button>
-			</form></li>
-
-
-
+		
+		<li><a href="../pages/login.php"><img src='../assets/images/logos/user.png' alt='logo user'></a></li>
 		<li><a href="../pages/gallery.php">Gallery</a></li>
 		<li><a href="../pages/history.php">History</a></li>
 		<li><a href="../pages/blog.php">blog</a></li>

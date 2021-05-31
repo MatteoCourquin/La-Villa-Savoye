@@ -13,6 +13,11 @@ header{
 /* Logo */
 
 header a img{
+	width: 40px;
+	height: auto;
+}
+
+#logoVilla{
 	width: 70px;
 	height: auto;
 	padding: 25px;

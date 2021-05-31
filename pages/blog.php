@@ -12,12 +12,13 @@
 	<body>
 		
 		<?php
-		include('../components/header.php');
+		// include('../components/header.php');
 		?>
 
 
 		<article id="zone_article">
-			<div id="article1" class="article">
+
+			<!-- <div id="article1" class="article">
 				<img src="../assets/images/article1.jpg">
 				<h1>News on La VILLA SAVOYE !</h1>
 
@@ -110,8 +111,43 @@
 
 				<button id="more6" class="more">more ...</button>
 				<button id="less6" class="less">less ...</button>
-			</div>	
+			</div>	 -->
+
+			<form method='POST' action='blog.php' id='crearticle'>
+				<h1>Title :</h1>
+				<input type='text' name='title' required>
+
+				<h1>Content :</h1>
+				<textarea name='content' required></textarea>
+
+				<input type='submit' name='submit' value='publish'>
+			</form>
 		</article>
+
+		<button>create your article</button>
+		
+		<?php
+
+			$db = new PDO('mysql:host=localhost;dbname=laVillaSavoye', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+
+			if (isset($_POST['title'], $_POST['content']) && !empty($_POST['title']) && !empty($_POST['content'])){
+
+				$title = htmlspecialchars(addslashes($_POST['title']));
+				$content = htmlspecialchars(addslashes($_POST['content']));
+
+				$sql = "INSERT INTO article (title, content) VALUES ('$title', '$content')";
+				$db->exec($sql);
+
+			}
+			
+			$r = $db->query('SELECT * FROM article');
+
+			while ($article = $r->fetch(PDO::FETCH_ASSOC)){
+				?> <h1> <?php echo $article['title']; ?> </h1>
+				<p> <?php echo $article['content']; ?> </p>
+
+			<?php } ?>
+
 
 		<script type="text/javascript" src="../script/blog.js"></script>
 	</body>
