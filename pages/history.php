@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<title>History</title>
-		<link rel="stylesheet" type="text/css" href="../style/style2.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/style2.css">
 		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta charset="utf-8">
@@ -12,7 +12,7 @@
 
 		<!-- Header -->
 		<?php
-		include('../header/header.php');
+		include('../components/header.php');
 		?>
 
 		<main id='main'>
@@ -22,7 +22,7 @@
 					<h2>1929</h2>
 				</div>
 				
-				<img src="../images/histoire/villa-savoye-day.jpg" alt="Image de la villa savoye" id="lavillasavoye">
+				<img src="../assets/images/villa-savoye-day.jpg" alt="Image de la villa savoye" id="lavillasavoye">
 			</div>
 
 			<div id="texte">

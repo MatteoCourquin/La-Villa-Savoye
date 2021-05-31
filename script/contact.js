@@ -8,7 +8,7 @@ var nom = document.getElementById('nom');
 var age = document.getElementById('age');
 var email = document.getElementById('email');
 var tel = document.getElementById('phone');
-var bouton = document.getElementById('bouton');
+var button = document.getElementById('submit');
 
 
 //fonctions :
@@ -88,13 +88,7 @@ function validation4() {
 
 // événement :
 
-bouton.addEventListener('click', validation1);
-bouton.addEventListener('click', validation2);
-bouton.addEventListener('click', validation3);
-bouton.addEventListener('click', validation4);
-
-
-
-
-
-
+button.addEventListener('click', validation1);
+button.addEventListener('click', validation2);
+button.addEventListener('click', validation3);
+button.addEventListener('click', validation4);

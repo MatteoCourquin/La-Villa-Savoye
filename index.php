@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<title>La Villa Savoye</title>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;600&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -19,8 +19,8 @@
 			<header>	
 				<h1><span>LA </span><span> VILLA </span><span> SAVOYE</span></h1>	
 				<div id="buttons">
-					<a href ="pages/histoire.php"><button class="boutton">History</button></a>
-					<a href ="pages/galerie.php"><button class="boutton">Gallery</button></a>
+					<a href ="pages/history.php"><button class="boutton">History</button></a>
+					<a href ="pages/gallery.php"><button class="boutton">Gallery</button></a>
 					<a href ="pages/blog.php"><button class="boutton">blog</button></a>
 					<a href ="pages/contact.php"><button class="boutton">contact</button></a>
 				</div>

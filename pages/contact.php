@@ -3,7 +3,7 @@
 	<head>
 		<title>Contact</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="stylesheet" type="text/css" href="../style/style2.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/style2.css">
 		<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;600&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta charset="utf-8">
@@ -12,7 +12,7 @@
 	<body>
 
 		<?php		
-		include('../header/header.php');
+		include('../components/header.php');
 		?>
 
 		<div id="zone_verif">
@@ -54,7 +54,7 @@
 					<div>
 						<div class="champs">
 							<label class="label">Message :</label>
-							<textarea id="message" type="text" placeholder="Message" class="sous_champ" required></textarea>
+							<textarea id="message" type="text" placeholder="Message" class="sous_champ"></textarea>
 						</div>
 					</div>
 
@@ -66,50 +66,6 @@
 			
 		</section>
 
-
-
-
-		<!-- <section id="pageContact">
-			<div id="zoneContact">
-				<div id="contact">
-					<div id="infos">
-						<div class="champs">
-						<label>Your name :</label>
-						<input type="text" placeholder="Prenom Nom" id="nom" class="champ">
-						</div>
-						<p id="zone_verif_1" class="verif"></p>
-
-						<div class="champs">
-						<label>Age :</label>
-						<input type="number" placeholder="Age" id="age" class="champ">
-						</div>
-						<p id="zone_verif_2" class="verif"></p>
-
-						<div class="champs">
-						<label>E-mail :</label>
-						<input type="email" placeholder="E-mail" id="email" class="champ">
-						</div>
-						<p id="zone_verif_3" class="verif"></p>
-
-						<div class="champs">
-						<label>Phone number :</label>
-						<input type="text" placeholder="00 00 00 00 00" id="telephone" class="champ">
-						</div>
-						<p id="zone_verif_4" class="verif"></p>
-					</div>
-
-					<div id="message">
-						<div class="champs">
-						<label>Message :</label>
-						<input type="text" placeholder="Message" id="message" required class="champ">
-						</div>
-					</div>
-				</div>
-			</div>
-    			
-    		<button id="bouton">Send</button>
-
-		</section> -->
 		<script type="text/javascript" src="../script/contact.js"></script>
 	</body>
 </html> 
