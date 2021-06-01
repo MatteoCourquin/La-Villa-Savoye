@@ -20,11 +20,11 @@
 		<main>
 			<?php
 			
-			if ($_SESSION['connected'] = true){
-				echo 'connected';
-			} else{
-				echo 'not connected';
-			}
+			// if ($_SESSION['connected'] = true){
+			// 	echo 'connected';
+			// } else{
+			// 	echo 'not connected';
+			// }
 
 			?>
 
@@ -112,9 +112,9 @@
 
 
 			<form id="form_commentaire" method="post">
-				<input id="pseudo_" type="text" name="pseudo" placeholder="Pseudo" required>
-				<input id="comm_" type="text" name="message" placeholder="Message" required></input>
-				<input type="submit" value="SEND" id="send">
+				<input id="pseudo_" class="champs" type="text" name="pseudo" placeholder="Pseudo" required>
+				<input id="comm_" class="champs" type="text" name="message" placeholder="Message" required></input>
+				<input type="submit" value="SEND" class='btn-blue'>
 			</form>
 			
 			</main>

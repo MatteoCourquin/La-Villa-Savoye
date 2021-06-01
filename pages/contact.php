@@ -15,13 +15,6 @@
 		include('../components/header.php');
 		?>
 
-		<div id="zone_verif">
-			<p id="zone_verif_1" class="verif"></p>
-			<p id="zone_verif_2" class="verif"></p>
-			<p id="zone_verif_3" class="verif"></p>
-			<p id="zone_verif_4" class="verif"></p>
-		</div>
-
 		<section id="zoneContact">
 
 			<form id="form_contact">
@@ -29,38 +22,39 @@
 				<h1>CONTACT US</h1>
 
 				<div id="sous_form">
-					<div>
-						<div class="champs">
-							<label class="label">Your name :</label>
-							<input id="nom" type="text" placeholder="Name" class="sous_champ" required>
-						</div>
 
-						<div class="champs">
-							<label class="label">Age :</label>
-							<input id="age" type="number" placeholder="Age" class="sous_champ" required>
-						</div>
-
-						<div class="champs">
-							<label class="label">Mail :</label>
-							<input id="email" type="text" placeholder="E-Mail" class="sous_champ" required>
-						</div>
-
-						<div class="champs">
-							<label class="label">Phone number :</label>
-							<input id="phone" type="text" placeholder="Phone Number" class="sous_champ" required>
-						</div>
+					<p id="zone_verif_1" class="verif">Hello world</p>
+					<div class='champs_contact'>
+						<label class="label">Your name :</label>
+						<input class="champs sous_champs" id="nom" type="text" placeholder="Name" required>
 					</div>
 
-					<div>
-						<div class="champs">
-							<label class="label">Message :</label>
-							<textarea id="message" type="text" placeholder="Message" class="sous_champ"></textarea>
-						</div>
+					<p id="zone_verif_2" class="verif">Hello world</p>
+					<div class='champs_contact'>
+						<label class="label">Age :</label>
+						<input class="champs sous_champs" id="age" type="number" placeholder="Age" required>
+					</div>
+
+					<p id="zone_verif_3" class="verif">Hello world</p>
+					<div class='champs_contact'>
+						<label class="label">Mail :</label>
+						<input class="champs sous_champs" id="email" type="text" placeholder="E-Mail" required>
+					</div>
+
+					<p id="zone_verif_4" class="verif">Hello world</p>
+					<div class='champs_contact'>
+						<label class="label">Phone number :</label>
+						<input class="champs sous_champs" id="phone" type="text" placeholder="Phone Number" required>
+					</div>
+
+					<div class='champs_contact'>
+						<label class="label">Message :</label>
+						<textarea class="champs sous_champs" id="message" type="text" placeholder="Message"></textarea>
 					</div>
 
 				</div>
 				
-				<button id="submit">Send</button>
+				<button class="btn-blue" >Send</button>
 				
 			</form>
 			

@@ -11,6 +11,47 @@
 	--anton: 'Anton', sans-serif;
 }
 
+h1, h2, h3, p{
+	font-family: 'Anton', sans-serif;
+}
+
+/* --------------- class css --------------- */
+
+.btn-blue{
+	border-radius: 15px;
+	border: none;
+	background-color: #535ec041;
+	font-family: var(--anton);
+	font-size: 15px;
+	font-weight: 100;
+}
+.btn-blue:hover{
+	background-color: #535ec0cb;
+	transition: 0.3s;
+}
+.champs{
+	font-family: var(--anton);
+    font-weight: 100;
+    font-size: 15px;
+    border: 1px solid #cecece;
+    outline: none;
+	padding-left: 15px;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #e3e3e3, inset -20px -20px 60px #ffffff;
+}
+.champ:hover{
+	background: #9a9a9acb;
+	transition: 0.3s;
+}
+
+
+/* ----------------------------- connexion ----------------------------- */
+
+#connexion{
+	position: absolute;
+	top: 150px;
+}
 
 /* ------------------------------ Histoire ------------------------------ */
 
@@ -24,7 +65,6 @@
 	display: grid;
 	width: 100%;
 	grid-template-columns: 45% 55%;
-
 }
 
 #titre{
@@ -59,6 +99,8 @@
 
 /* Texte */
 
+/*  Histoire  */
+
 #texte{
 	position: absolute;
 	width: 900px;
@@ -78,8 +120,9 @@ h3{
 	margin: 10px;
 }
 
-p{
-	font-family: 'Avenir';
+.p_history{
+	font-family: 'Exo';
+	font-weight: 300;
 	font-size: 16px;
 	margin-bottom: 50px;
 }
@@ -108,8 +151,8 @@ main{
 h2{
 	position: relative;
 	/* Police / Texte */
-	font-family: 'Exo', sans-serif;
-	font-weight: 300;
+	font-family: 'Anton', sans-serif;
+	font-weight: 200;
 	font-size: 20px;
 	color: white;
 	text-shadow: -2px 2px 8px rgba(0, 0, 0, 0.838);
@@ -122,10 +165,8 @@ h2{
 	text-align: center;
 	padding-top: 22px;
 	/* Effet Glassmorphisme */
-	background: rgba( 255, 255, 255, 0.25 );
+	background: rgba( 255, 255, 255, 0.9 );
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-	backdrop-filter: blur( 8px );
-
 }
 
 /* Lightbox */
@@ -217,66 +258,22 @@ h2{
 }
 
 #pseudo_{
-	font-family: 'Exo';
-	font-weight: 400;
-	font-size: 15px;
 	width: 200px;
 	height: 50px;
-	border: 0px;
-	outline: none;
-	border-radius: 50px;
-	background: #e0e0e0;
-	box-shadow: inset 20px 20px 60px #e3e3e3, inset -20px -20px 60px #ffffff;
 	padding-left: 25px;
 }
 
 #comm_{
-	font-family: 'Exo';
-	font-weight: 400;
-	font-size: 15px;
 	width: 70%;
 	height: 50px;
-	border: 0px;
-	outline: none;
-	border-radius: 50px;
-	background: #e0e0e0;
-	box-shadow: inset 20px 20px 60px #e3e3e3, inset -20px -20px 60px #ffffff;
 	padding-left: 25px;
 }
-
 #send{
-	font-family: 'Exo';
-	font-weight: 500;
-	font-size: 20px;
 	width: 10%;
-	color: white;
-	border: 0px;
-	border-radius: 25px;
-	background-color:  #535ec046;
-}
-#send:hover{
-	background-color: #535EC0;
-	transition: 0.3s;
 }
 
 /* ------------------------ Contact ------------------------ */
 
-#zone_verif{
-	position: absolute;
-	grid-column-start: 2;
-	color: red;
-	text-align: center;
-	display: grid;
-	grid-template-columns: 1fr 400px 1fr;
-	width: 100%;
-	top: 100px;
-}
-
-.verif{
-
-	grid-column-start: 2;
-	z-index: 100;
-}
 
 #zoneContact{
 	width: 100%;
@@ -284,12 +281,6 @@ h2{
 	top: 190px;
 	display: grid;
 	grid-template-columns: 1fr 400px 1fr;
-	font-family: 'exo';
-	font-weight: 700;
-}
-
-#form_contact h1{
-	margin: 10px;
 }
 
 #form_contact{
@@ -297,61 +288,43 @@ h2{
 	width: 400px;
 	height: 480px;
 	border-radius: 20px;
-	padding: 5px;
 	background: #ffffff;
 	box-shadow:  13px 13px 49px #d1d1d1, -13px -13px 49px #ffffff;
 }
 
 #sous_form{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
-.label{
-	margin-bottom: 10px;
-}
-
-.champs{
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
+	align-items: center;
+}
+
+/* .champs_contact{
+	display: flex;
+	flex-direction: column;
 	font-weight: 300;
-}
+} */
 
-.sous_champ{
+.sous_champs{
 	height: 30px;
-	border: 1px solid grey;
-	border-radius: 10px;
-	padding-left: 10px;
-	outline: none;
-}
-.sous_champ:hover{
-	background-color: #c6c6c6cb;
-	transition: 0.3s;
 }
 
+.verif{
+	height: 20px;
+}
+
+.champs_contact{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
 
 #message{
-	height: 270px;
-	max-height: 270px;
-	font-family: 'exo';
-	padding-top: 10px;
+	resize: none;
+	height: 70px;
 }
 
-#submit{
-	width: 100px;
-	height: 40px;
-	border: none;
-	margin-top: 30px;
-	border-radius: 10px;
-	margin-left: 140px;
-	margin-right: 140px;
-	background-color: #535ec041;
-}
-#bouton:hover{
-	background-color: #535ec0cb;
-	transition: 0.3s;
-}
+
 
 /* ----------------------- Blog ----------------------- */
 
