@@ -23,38 +23,38 @@
 
 				<div id="sous_form">
 
-					<p id="zone_verif_1" class="verif">Hello world</p>
+					<p id="zone_verif_1" class="verif"></p>
 					<div class='champs_contact'>
 						<label class="label">Your name :</label>
-						<input class="champs sous_champs" id="nom" type="text" placeholder="Name" required>
+						<input class="champs sous_champs" id="name" type="text" placeholder="Name">
 					</div>
 
-					<p id="zone_verif_2" class="verif">Hello world</p>
+					<p id="zone_verif_2" class="verif"></p>
 					<div class='champs_contact'>
 						<label class="label">Age :</label>
-						<input class="champs sous_champs" id="age" type="number" placeholder="Age" required>
+						<input class="champs sous_champs" id="age" type="number" placeholder="Age">
 					</div>
 
-					<p id="zone_verif_3" class="verif">Hello world</p>
+					<p id="zone_verif_3" class="verif"></p>
 					<div class='champs_contact'>
 						<label class="label">Mail :</label>
-						<input class="champs sous_champs" id="email" type="text" placeholder="E-Mail" required>
+						<input class="champs sous_champs" id="email" type="text" placeholder="E-Mail">
 					</div>
 
-					<p id="zone_verif_4" class="verif">Hello world</p>
+					<p id="zone_verif_4" class="verif"></p>
 					<div class='champs_contact'>
 						<label class="label">Phone number :</label>
-						<input class="champs sous_champs" id="phone" type="text" placeholder="Phone Number" required>
+						<input class="champs sous_champs" id="phone" type="text" placeholder="Phone Number">
 					</div>
 
-					<div class='champs_contact'>
+					<div class='champs_contact' id='zone_message'>
 						<label class="label">Message :</label>
 						<textarea class="champs sous_champs" id="message" type="text" placeholder="Message"></textarea>
 					</div>
 
 				</div>
 				
-				<button class="btn-blue" >Send</button>
+				<button class="btn-blue" id="submit">Send</button>
 				
 			</form>
 			

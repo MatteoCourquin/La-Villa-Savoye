@@ -49,7 +49,6 @@ function morefunction6(){
     more6.style.display = 'none';
     less6.style.display = 'block';
 }
-
 function lessfunction1(){
     masque1.style.display = 'none';
     more1.style.display = 'block';

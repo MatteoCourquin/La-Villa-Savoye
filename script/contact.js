@@ -1,14 +1,14 @@
 //inportation de mes éléments :
 
-var zoneVerif1 = document.getElementById('zone_verif_1');
-var zoneVerif2 = document.getElementById('zone_verif_2');
-var zoneVerif3 = document.getElementById('zone_verif_3');
-var zoneVerif4 = document.getElementById('zone_verif_4');
-var nom = document.getElementById('nom');
-var age = document.getElementById('age');
-var email = document.getElementById('email');
-var tel = document.getElementById('phone');
-var button = document.getElementById('submit');
+var zoneVerif1 = document.getElementById('#zone_verif_1');
+var zoneVerif2 = document.getElementById('#zone_verif_2');
+var zoneVerif3 = document.getElementById('#zone_verif_3');
+var zoneVerif4 = document.getElementById('#zone_verif_4');
+var nom = document.getElementById('#name');
+var age = document.getElementById('#age');
+var email = document.getElementById('#email');
+var tel = document.getElementById('#phone');
+var button = document.getElementById('#submit');
 
 
 //fonctions :

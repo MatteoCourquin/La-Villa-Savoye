@@ -5,69 +5,75 @@ var page = document.querySelector('*');
 var main = document.querySelector('main');
 
 // J'appelle mes images
-var image1 = document.querySelector('#image1');
-var image2 = document.querySelector('#image2');
-var image3 = document.querySelector('#image3');
 
-// J'appelle mes lightbox
-var box1 = document.getElementById('lightbox1');
-var box2 = document.getElementById('lightbox2');
-var box3 = document.getElementById('lightbox3');
+var images = document.getElementsByClassName('image');
+console.log(images);
 
-// J'appelle mes croix :
-var croix1 = document.getElementById('close1');
-var croix2 = document.getElementById('close2');
-var croix3 = document.getElementById('close3');
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', function() {
+        afficherBox(i + 1)
+    });
+}
 
-
-//Function :
-
-// Ouvrir lightbox:
-function afficherBox1() {
-	// Définition des valeurs CSS
-    box1.style.display = 'block';
-    croix1.style.display = 'block';
+function afficherBox(index){
+    var box = document.getElementById('lightbox' + index);
+    var croix = document.getElementById('close' + index);
+    console.log(box);
+    console.log(croix);
+    box.style.display = 'block';
+    croix.style.display = 'block';
     page.style.overflow = 'hidden';
-}
-function afficherBox2() {
-    box2.style.display = 'block';
-    croix2.style.display = 'block';
-    page.style.overflow = 'hidden';
-}
-function afficherBox3() {
-    box3.style.display = 'block';
-    croix3.style.display = 'block';
-    page.style.overflow = 'hidden';
+    croix.addEventListener('click', fermerBox(index));
 }
 
-
-// Fermer lighbox :
-function fermerBox1() {
-    // Définition des valeurs CSS :
-    box1.style.display = 'none';
-    croix1.style.display = 'none';
-    page.style.overflow = 'visible';
-}
-function fermerBox2() {
-    box2.style.display = 'none';
-    croix2.style.display = 'none';
-    page.style.overflow = 'visible';
-}
-function fermerBox3() {
-    box3.style.display = 'none';
-    croix3.style.display = 'none';
+function fermerBox(index){
+    var box = document.getElementById('lightbox' + index);
+    var croix = document.getElementById('close' + index);
+    box.style.display = 'none';
+    croix.style.display = 'none';
     page.style.overflow = 'visible';
 }
 
 
 
-//Events :
-
-image1.addEventListener('click', afficherBox1);
-image2.addEventListener('click', afficherBox2);
-image3.addEventListener('click', afficherBox3);
 
 
-croix1.addEventListener('click', fermerBox1);
-croix2.addEventListener('click', fermerBox2);
-croix3.addEventListener('click', fermerBox3);
+// Selecteur :
+
+var btn_day = document.getElementById('btn_day');
+var btn_night = document.getElementById('btn_night');
+var btn_all = document.getElementById('btn_all');
+
+var div_day = document.getElementsByClassName('day');
+var div_night = document.getElementsByClassName('night');
+
+function day(){
+    for (let i = 0; i < div_day.length; i++) {
+        div_day[i].style.display = 'block';
+    }
+    for (let i = 0; i < div_night.length; i++) {
+        div_night[i].style.display = 'none';
+    }
+}
+
+function night(){
+    for (let i = 0; i < div_day.length; i++) {
+        div_day[i].style.display = 'none';
+    }
+    for (let i = 0; i < div_night.length; i++) {
+        div_night[i].style.display = 'block';
+    }
+}
+
+function all(){
+    for (let i = 0; i < div_day.length; i++) {
+        div_day[i].style.display = 'block';
+    }
+    for (let i = 0; i < div_night.length; i++) {
+        div_night[i].style.display = 'block';
+    }
+}
+
+btn_day.addEventListener('click', day);
+btn_night.addEventListener('click', night);
+btn_all.addEventListener('click', all);

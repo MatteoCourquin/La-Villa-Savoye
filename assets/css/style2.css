@@ -8,6 +8,7 @@
 :root{
 	--light-shadow: -8px 8px 8px rgba(0, 0, 0, 0.25);
 	--big-shadow: -8px 8px 8px rgba(0, 0, 0, 0.25);
+	--exo: 'Exo';
 	--anton: 'Anton', sans-serif;
 }
 
@@ -18,10 +19,10 @@ h1, h2, h3, p{
 /* --------------- class css --------------- */
 
 .btn-blue{
-	border-radius: 15px;
+	border-radius: 10px;
 	border: none;
 	background-color: #535ec041;
-	font-family: var(--anton);
+	font-family: var(--exo);
 	font-size: 15px;
 	font-weight: 100;
 }
@@ -30,13 +31,14 @@ h1, h2, h3, p{
 	transition: 0.3s;
 }
 .champs{
-	font-family: var(--anton);
+	font-family: var(--exo);
     font-weight: 100;
     font-size: 15px;
+	height: 30px;
     border: 1px solid #cecece;
     outline: none;
 	padding-left: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     background: #e0e0e0;
     box-shadow: inset 20px 20px 60px #e3e3e3, inset -20px -20px 60px #ffffff;
 }
@@ -133,6 +135,25 @@ main{
 	width: 100%;
 	position: absolute;
 	top: 120px;
+}
+
+#select{
+	width: 100%;
+	display: flex;
+}
+
+.btn_select{
+	width: 100px;
+	height: 30px;
+	margin: 20px;
+}
+
+.night{
+	display: block;
+}
+
+.day{
+	display: block;
 }
 
 #zoneimage{
@@ -252,28 +273,47 @@ h2{
 
 #form_commentaire{
 	display: flex;
-	justify-content: space-around;
 	padding-bottom: 20px;
 	margin-top: 20px;
 }
 
+#pseudo_comm{
+	width: 93%;
+	margin-left: 20px;
+	display: table-cell;
+}
+
 #pseudo_{
-	width: 200px;
-	height: 50px;
-	padding-left: 25px;
+	/* float: left;  */
+	outline: none; 
+	height: 50px; 
+	margin: 0px; 
+	padding-left: 20px;
+	border-right: 1.8px solid #bbbbbb !important;
+	border: 0px;
+	border-radius: 10px 0px 0px 10px;
+	background-color: #e4e4e4;
+	width: 10%;	
 }
 
 #comm_{
-	width: 70%;
+	/* outline: none; */
 	height: 50px;
-	padding-left: 25px;
+	margin: 0px;
+	padding-left: 20px;
+	border: 0px;
+	background-color: #e4e4e4;
+	width: 83%;	
+	border-radius: 0px 10px 10px 0px;
 }
+
 #send{
-	width: 10%;
+	width: 150px;
+	height: 50px;
+	margin-right: 2%;
 }
 
 /* ------------------------ Contact ------------------------ */
-
 
 #zoneContact{
 	width: 100%;
@@ -283,29 +323,30 @@ h2{
 	grid-template-columns: 1fr 400px 1fr;
 }
 
-#form_contact{
+#form_contact, #crearticle{
 	grid-column-start: 2;
 	width: 400px;
-	height: 480px;
+	height: 510px;
 	border-radius: 20px;
 	background: #ffffff;
 	box-shadow:  13px 13px 49px #d1d1d1, -13px -13px 49px #ffffff;
+	margin-bottom: 20px;
 }
 
-#sous_form{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+#form_contact h1, #zone_crearticle h1{
+	margin: 20px 0 0 20px;
 }
-
-/* .champs_contact{
-	display: flex;
-	flex-direction: column;
-	font-weight: 300;
-} */
 
 .sous_champs{
 	height: 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+}
+
+.label{
+	font-family: var(--anton);
 }
 
 .verif{
@@ -324,12 +365,24 @@ h2{
 	height: 70px;
 }
 
+#zone_message{
+	margin-top: 20px;
+}
+
+#submit{
+	width: 150px; 
+	height: 30px; 
+	margin-top: 15px;
+	margin-left: 125px;
+}
+
 
 
 /* ----------------------- Blog ----------------------- */
 
 .masques{
 	display: none;
+	font-family: var(--anton);
 }
 
 .more{
@@ -340,6 +393,7 @@ h2{
 	border-radius: 10px;
 	margin-left: 30%;
 	margin-right: 30%;
+	margin-top: 20px;
 }
 
 .less{
@@ -350,21 +404,27 @@ h2{
 	border-radius: 10px;
 	margin-left: 30%;
 	margin-right: 30%;
+	margin-top: 20px;
 }
 
 #zone_article{
-	position: absolute;
+
 	margin-top: 100px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
+#content{
+	resize: none;
+	width: 90%;
+	margin: 12px 0 0 12px;
+	height: 200px;
+}
+
 .article{
-	font-family: 'exo';
+	font-family: var(--anton);
 	padding: 20px;
 	text-align: justify;
-	height: 400px;
-	overflow: hidden;
 }
 
 #zone_article h1{
@@ -377,6 +437,12 @@ h2{
 	width: 100%;
 	height: auto;
 	border-radius: 15px;
+}
+
+#zone_crearticle{
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 /* ----------------------------- Responsive histoire ----------------------------- */
@@ -423,7 +489,23 @@ h2{
 @media screen and (max-width: 800px){
 	#zoneimage{
 		grid-template-columns: 1fr;
-	}		
+	}
+	#pseudo_{
+		height: 50px;
+		border-right: 0px solid #bbbbbb !important;
+		border-bottom: 2px solid #bbbbbb !important;
+		border: 0px;
+		border-radius: 10px 10px 0px 0px;
+		width: 90%;	
+	}
+	#comm_{
+		height: 100px;
+		width: 90%;	
+		border-radius: 0px 0px 10px 10px;
+	}
+	#send{
+		width: 60px;
+	}
 }
 
 /* ----------------------- Responsive contact ----------------------- */
