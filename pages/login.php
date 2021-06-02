@@ -11,14 +11,6 @@
         }
     }
 
-    // require 'log.php';
-    // if (connected()){
-    //     echo 'connected';
-    //     exit();
-    // } elseif{
-    //     echo 'not connected';
-    // }
-
     include('../components/header.php');
 ?>
 

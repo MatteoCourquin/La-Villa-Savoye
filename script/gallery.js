@@ -23,7 +23,9 @@ function afficherBox(index){
     box.style.display = 'block';
     croix.style.display = 'block';
     page.style.overflow = 'hidden';
-    croix.addEventListener('click', fermerBox(index));
+    croix.addEventListener('click', function(){
+        fermerBox(index);
+    });
 }
 
 function fermerBox(index){

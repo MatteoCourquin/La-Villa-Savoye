@@ -11,9 +11,7 @@
 	<body>
 
 		<!-- Header -->
-		<?php
-		include('../components/header.php');
-		?>
+		<?php include('../components/Header.php'); ?>
 
 		<main id='main'>
 			<div id="pres">
@@ -42,10 +40,6 @@
 			</div>
 
 		</main>
-
-		<!-- <footer>
-			<iframe width="1000" height="563" src="https://www.youtube.com/embed/BsIO0gna0M8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</footer> -->
 	</body>
 </html>
 
