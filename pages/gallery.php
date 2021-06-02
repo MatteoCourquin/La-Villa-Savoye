@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -33,8 +35,15 @@
 					$r = $pdo->query('SELECT * FROM comms ORDER BY id_commentarie DESC');
 					
 					while($commentarie = $r->fetch(PDO::FETCH_ASSOC)) {
-						echo "<div id='zonecomm'>"."<div id='pseudo'>". $commentarie['pseudo']."</div>" . "<div id='commentaire'>". $commentarie['message']."</div>"."
-						<div div='date_heure'>".$commentarie['date_heure']."</div>" . "<a id='delete' href='galerie.php?id=" . $commentarie['id_commentarie'] . "'><img src='../assets/images/logos/croix.png' alt='croix' id='croixcomm'></a>"."</div>";
+						echo "<div id='zonecomm'>" .
+								"<div id='pseudo'>" . $commentarie['pseudo'] . "</div>" . 
+								"<div id='commentaire'>" . $commentarie['message'] . "</div>".
+								"<div div='date_heure'>" . $commentarie['date_heure'] . "</div>".
+								"<a id='delete' href='galerie.php?id=" . $commentarie['id_commentarie']."'>
+								<img src='../assets/images/logos/croix.png' alt='croix' id='croixcomm'></a>".
+								"</div>";
+								// if ($_SESSION['role'] === 'ADMIN'){ 
+						// }
 					} 
 			?>
 

@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,7 +14,6 @@
 
 
 <body>
-
 
   <?php include('../components/header.php'); ?>
   
@@ -49,20 +50,28 @@
       <?php } ?>
     </article>
 
-    <div id='zone_crearticle'>
-      <form method='POST' action='' id='crearticle' enctype='multipart/form-data'>
-        <h1>Title :</h1>
-        <input type='text' name='title' class='champs' placeholder='Title' required>
+    <?php 
+      if ($_SESSION['role'] === 'ADMIN'){ 
+        
+        echo('hello');
+        ?>
 
-        <h1>Image :</h1>
-        <input type='file' name='image' value='' id='image' required>
+        <div id='zone_crearticle'>
+          <form method='POST' action='' id='crearticle' enctype='multipart/form-data'>
+            <h1>Title :</h1>
+            <input type='text' name='title' class='champs' placeholder='Title' required>
 
-        <h1>Content :</h1>
-        <textarea name='content' placeholder='Article' class='champs' id='content' required></textarea>
+            <h1>Image :</h1>
+            <input type='file' name='image' value='' id='image' required>
 
-        <input type='submit' name='submit' value='publish' id='submit' class='btn-blue'>
-      </form>
-    </div>
+            <h1>Content :</h1>
+            <textarea name='content' placeholder='Article' class='champs' id='content' required></textarea>
+
+            <input type='submit' name='submit' value='publish' id='submit' class='btn-blue'>
+          </form>
+        </div>
+      <?php } ?>
+    
 
     
 

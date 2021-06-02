@@ -8,7 +8,7 @@
 		
 	<ul id="menu">
 		
-		<li><a href="../pages/login.php"><img src='../assets/images/logos/user.png' alt='logo user'></a></li>
+		<li><a href="../pages/connected.php"><img src='../assets/images/logos/user.png' alt='logo user'></a></li>
 		<li><a href="../pages/gallery.php">Gallery</a></li>
 		<li><a href="../pages/history.php">History</a></li>
 		<li><a href="../pages/blog.php">blog</a></li>
