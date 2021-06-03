@@ -1,67 +1,24 @@
-// Menu burger :
 
-// J'appelle mes élements :
+var body = document.getElementsByTagName('html');
+var img_day = document.querySelector('#lavillasavoye_day');
+var img_night = document.querySelector('#lavillasavoye_night');
+var btn_dark = document.getElementById('btn_dark');
+var btn_light = document.getElementById('btn_light');
 
-var burger = document.getElementById('burger_ico');
-var menu = document.getElementById('menu');
-var main = document.querySelector('main');
-
-// Essai pour masquer le menu burger lorsqu'on aggrandi la fenetre apres l'avoir ouvert :
-
-var x = window.matchMedia('(max-width: 700px)');
-// var y = window.matchMedia('(max-width: 1200px)');
-
-//Function :
-
-// Ouvrir menu :
-
-function afficherMenu() {
-
-	menu.style.display = 'block';
-	burger.style.display = 'none';
-	
-    // console.log('afficher');
+function dark(index){
+    console.log('dark');
+    btn_light.style.display = 'block';
+    body.style.backgroundColor = 'black';
+    // img_day.style.display = 'none';
+    // img_night.style.display = 'block';
 }
 
-// Fermer menu :
-
-function fermerMenu() {
-
-    menu.style.display = 'none';
-	burger.style.display = 'block';
-
-    // console.log('fermer');
-    
-    // essais :
-    
-    // if(x.matches){
-        //     menu.style.display = 'none';
-        //     burger.style.display = 'block';
-        // }else if(y.matches){
-            //     menu.style.display = 'block';
-            //     burger.style.display = 'none';
-            // }            
+function light(index){
+    console.log('light');
+    // articles.style.display = 'none';
+    // more.style.display = 'block';
+    // less.style.display = 'none';
 }
 
-function afficherMasquer() {
-    if (x == true){
-        console.log('ça me casse les couilles');
-        // menu.style.display = 'block';
-        // burger.style.display = 'none';
-    }
-}
-
-afficherMasquer();
-
-
-
-//Events :
-
-burger.onclick = afficherMenu;
-main.onclick = fermerMenu;
-
-// Essais :
-
-// burger.addEventListener('click', afficherMenu);
-// menu.addEventListener('click', afficherMenu);
-// body.addEventListener('click', fermerMenu);
+btn_dark.addEventListener('click', dark);
+btn_light.addEventListener('click', light);

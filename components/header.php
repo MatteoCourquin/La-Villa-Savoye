@@ -7,6 +7,7 @@
 	<img src="../assets/images/logos/burger.png" alt="logo burger" id="burger_ico">
 		
 	<ul id="menu">
+		
 		<?php
 		if (isset($_SESSION['role'])){
 			?>

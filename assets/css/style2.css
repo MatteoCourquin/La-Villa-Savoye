@@ -93,11 +93,20 @@ h1, h2, h3, p{
 	z-index: -1;
 }
 
-#lavillasavoye{
+.lavillasavoye{
 	width: 900px;
 	box-shadow: var(--big-shadow)
 }
 
+#lavillasavoye_night{
+	display: none;
+}
+#lavillasavoye_day{
+	display: block;
+}
+#btn_light{
+	display: none;
+}
 
 /* Texte */
 
@@ -259,8 +268,7 @@ h2{
 
 #date_heure{
 	width: 20%;
-	height: 50px;
-	margin: 20px;
+	margin-top: 10px;
 	font-family: var(--anton);
 }
 
@@ -296,6 +304,10 @@ h2{
 	background-color: #e4e4e4;
 	width: 10%;	
 	float: left;
+}
+
+#pseudo_date{
+	display: flex;
 }
 
 #comm_{
@@ -431,10 +443,13 @@ h2{
 .article{
 	font-family: var(--anton);
 	padding: 20px;
-	height: 350px;
 	overflow: hidden;
 	text-align: justify;
 	margin-bottom: 20px;
+}
+
+.text_article{
+	display: none;
 }
 
 .articles{
@@ -515,7 +530,7 @@ h2{
 }
 
 @media screen and (max-width: 700px){
-	#lavillasavoye{
+	.lavillasavoye{
 		display: none;
 		width: 15px;
 		height: 15px;

@@ -42,17 +42,20 @@
 
       while ($article = $r->fetch(PDO::FETCH_ASSOC)) {
       ?>
-        <div class="article">
-          <img  src='<?php echo $article['image']; ?>'>
-          <h1> <?php echo $article['title']; ?> </h1>
-          <p> <?php echo $article['content']; ?> </p>
+        <div class='articles'>
+          <div id='article<?php echo $article['id_article']; ?>' class='article'>
+            <img  src='<?php echo $article['image']; ?>'>
+            <h1> <?php echo $article['title']; ?> </h1>
+            <p class='texte_article' id='texte_article<?php echo $article['id_article']; ?>'> <?php echo $article['content']; ?> </p>
+          </div>
+          <button id="more<?php echo $article['id_article'];?>" class="more btn-blue">view more</button>
+          <button id="less<?php echo $article['id_article'];?>" class="less btn-blue">view less</button>
         </div>
       <?php } ?>
     </article>
 
     <?php 
       if (isset($_SESSION['role']) && $_SESSION['role'] === 'ADMIN'){
-        
         ?>
 
         <div id='zone_crearticle'>

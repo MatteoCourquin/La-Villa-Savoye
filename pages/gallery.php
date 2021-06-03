@@ -24,7 +24,10 @@
 
 				$pdo = new PDO('mysql:host=localhost;dbname=laVillaSavoye', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
-				if(isset($_GET["id_commentarie"])){$id = $_GET["id_commentarie"] ; $pdo->exec("DELETE FROM comms WHERE id_commentarie =' . $id . '");};                    
+				if(isset($_GET["id_commentarie"])){
+					$id = $_GET["id_commentarie"]; 
+					$pdo->exec("DELETE FROM comms WHERE id_commentarie =' . $id . '");
+				};                    
 
 				if($_POST){
 					$_POST['pseudo'] = addslashes(($_POST['pseudo']));
@@ -36,9 +39,9 @@
 					
 					while($commentarie = $r->fetch(PDO::FETCH_ASSOC)) {
 						echo "<div id='zonecomm'>" .
-								"<div id='pseudo'>" . $commentarie['pseudo'] . "</div>" . 
-								"<div id='commentaire'>" . $commentarie['message'] . "</div>".
-								"<div id='date_heure'>" . $commentarie['date_heure'] . "</div>";
+								"<div id='pseudo_date'>" . "<div id='pseudo'>" . $commentarie['pseudo'] . "</div>" . 
+								"<div id='date_heure'>" . $commentarie['date_heure'] . "</div>". "</div>" .
+								"<div id='commentaire'>" . $commentarie['message'] . "</div>";
 								
 								if (isset($_SESSION['role']) && $_SESSION['role'] === 'ADMIN'){
 
