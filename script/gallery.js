@@ -18,8 +18,6 @@ for (let i = 0; i < images.length; i++) {
 function afficherBox(index){
     var box = document.getElementById('lightbox' + index);
     var croix = document.getElementById('close' + index);
-    console.log(box);
-    console.log(croix);
     box.style.display = 'block';
     croix.style.display = 'block';
     page.style.overflow = 'hidden';

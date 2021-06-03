@@ -11,7 +11,7 @@
 		<?php
 		if (isset($_SESSION['role'])){
 			?>
-			<li><a href="../pages/disconnect.php"><img src='../assets/images/logos/logout.png' alt='logo user'></a></li>
+			<li><a href="../pages/logout.php"><img src='../assets/images/logos/logout.png' alt='logo user'></a></li>
 			<?php } else{ ?>
 				<li><a href="../pages/connected.php"><img src='../assets/images/logos/user.png' alt='logo user'></a></li>
 		<?php } ?>

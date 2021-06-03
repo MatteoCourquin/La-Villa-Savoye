@@ -24,14 +24,18 @@
 
 				$pdo = new PDO('mysql:host=localhost;dbname=laVillaSavoye', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
+				function censure($censure){
+					return str_replace(array_map('trim', file('censure.txt')), '*****', $censure);
+				}
+
 				if(isset($_GET["id_commentarie"])){
 					$id = $_GET["id_commentarie"]; 
 					$pdo->exec("DELETE FROM comms WHERE id_commentarie =' . $id . '");
 				};                    
 
 				if($_POST){
-					$_POST['pseudo'] = addslashes(($_POST['pseudo']));
-					$_POST['message'] = addslashes(($_POST['message']));
+					$_POST['pseudo'] = censure(addslashes(($_POST['pseudo'])));
+					$_POST['message'] = censure(addslashes(($_POST['message'])));
 					
 					$pdo->exec("INSERT INTO comms (pseudo, message, date_heure) VALUES ('$_POST[pseudo]', '$_POST[message]',NOW())");}
 					
