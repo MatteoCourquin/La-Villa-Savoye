@@ -7,13 +7,13 @@ for (let i = 0; i < more.length; i++) {
     });
 }
 
-
 function afficher(index){
-    var masque = document.getElementsByClassName('masques' + index);
+    var articles = document.getElementById('article' + index);
     var more = document.getElementById('more' + index);
     var less = document.getElementById('less' + index);
-    console.log(masque);
-    masque.style.display = 'block';
+    // console.log(articles);
+    console.log('afficher');
+    articles.style.height = 'auto';
     more.style.display = 'none';
     less.style.display = 'block';
     less.addEventListener('click', function(){
@@ -22,10 +22,11 @@ function afficher(index){
 }
 
 function fermer(index){
-    var masque = document.getElementsByClassName('masques');
+    var articles = document.getElementById('article' + index);
     var more = document.getElementById('more' + index);
     var less = document.getElementById('less' + index);
-    masque.style.display = 'none';
+    console.log('masquer');
+    articles.style.height = '350px';
     more.style.display = 'block';
     less.style.display = 'none';
 }

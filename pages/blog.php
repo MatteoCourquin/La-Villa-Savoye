@@ -51,26 +51,35 @@
     </article>
 
     <?php 
-      if ($_SESSION['role'] === 'ADMIN'){ 
+      if (isset($_SESSION['role']) && $_SESSION['role'] === 'ADMIN'){
         
-        echo('hello');
         ?>
 
         <div id='zone_crearticle'>
           <form method='POST' action='' id='crearticle' enctype='multipart/form-data'>
-            <h1>Title :</h1>
-            <input type='text' name='title' class='champs' placeholder='Title' required>
+            <div class='title'>
+              <h1>Title :</h1>
+              <input type='text' name='title' class='champs title' placeholder='Title' required>
+            </div>
 
-            <h1>Image :</h1>
-            <input type='file' name='image' value='' id='image' required>
+            <div id='image'>
+              <h1>Image :</h1>
+              <input type='file' name='image' value='' required>
+            </div>
 
-            <h1>Content :</h1>
-            <textarea name='content' placeholder='Article' class='champs' id='content' required></textarea>
+            <div class='content'>
+              <h1>Content :</h1>
+              <textarea name='content' placeholder='Article' class='champs content' required></textarea>
+            </div>
 
-            <input type='submit' name='submit' value='publish' id='submit' class='btn-blue'>
+            <input type='submit' name='submit' value='publish' id='submit_article' class='btn-blue'>
           </form>
         </div>
-      <?php } ?>
+      <?php }
+      
+      
+      
+      ?>
     
 
     

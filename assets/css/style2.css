@@ -227,6 +227,7 @@ h2{
 	margin-top: 20px;
 	background-color: rgb(255, 255, 255);
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
@@ -237,7 +238,7 @@ h2{
 	background-color: rgb(82, 82, 82);
 	border-radius: 10px;
 	text-align: center;
-	width: 10%;
+	width: 150px;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	margin-left: 20px;
@@ -249,7 +250,8 @@ h2{
 	font-weight: 400;
 	font-size: 15px;
 	padding: 10px;
-	width: 70%;
+	width: 95%;
+	margin: 20px;
 	border-radius: 10px;
 	background: #e0e0e0;
 	box-shadow: inset 20px 20px 60px #e3e3e3, inset -20px -20px 60px #ffffff;
@@ -258,6 +260,7 @@ h2{
 #date_heure{
 	width: 20%;
 	height: 50px;
+	margin: 20px;
 	font-family: var(--anton);
 }
 
@@ -280,24 +283,23 @@ h2{
 #pseudo_comm{
 	width: 93%;
 	margin-left: 20px;
-	display: table-cell;
 }
 
 #pseudo_{
-	/* float: left;  */
 	outline: none; 
 	height: 50px; 
 	margin: 0px; 
 	padding-left: 20px;
-	border-right: 1.8px solid #bbbbbb !important;
+	border-right: 1px solid #bbbbbb !important;
 	border: 0px;
 	border-radius: 10px 0px 0px 10px;
 	background-color: #e4e4e4;
 	width: 10%;	
+	float: left;
 }
 
 #comm_{
-	/* outline: none; */
+	outline: none;
 	height: 50px;
 	margin: 0px;
 	padding-left: 20px;
@@ -323,7 +325,7 @@ h2{
 	grid-template-columns: 1fr 400px 1fr;
 }
 
-#form_contact, #crearticle{
+#form_contact{
 	grid-column-start: 2;
 	width: 400px;
 	height: 510px;
@@ -333,7 +335,7 @@ h2{
 	margin-bottom: 20px;
 }
 
-#form_contact h1, #zone_crearticle h1{
+#form_contact h1{
 	margin: 20px 0 20px 20px;
 }
 
@@ -407,29 +409,50 @@ h2{
 }
 
 #zone_article{
-
 	margin-top: 100px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-#content{
+.title{
+	width: 100%;
+}
+
+#image{
+	width: 100%;
+}
+
+.content{
 	resize: none;
-	width: 90%;
-	margin: 12px 0 0 12px;
+	width: 100%;
 	height: 200px;
 }
 
 .article{
 	font-family: var(--anton);
 	padding: 20px;
+	height: 350px;
+	overflow: hidden;
 	text-align: justify;
+	margin-bottom: 20px;
 }
 
-#zone_article h1{
+.articles{
+	margin-bottom: 20px;
+}
+
+#crearticle{
+	width: 90%;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#crearticle h1{
 	text-align: start;
 	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 #zone_article img{
@@ -443,6 +466,41 @@ h2{
 	display: flex;
 	justify-content: center;
 }
+
+#submit_article{
+	width: 150px; 
+	height: 30px;
+	margin-right: 0px;
+	margin-top: 100px;
+}
+
+/* ---------------------------------- Connetion ---------------------------------- */
+
+#form_connect h1{
+	margin: 20px;
+}
+
+#form_connect{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+ 	align-items: center;
+}
+#email_connect{
+	width: 200px;
+	margin: 20px;
+}
+#password{
+	width: 200px;
+	margin: 20px;
+}
+#connect{
+	width: 100px;
+	height: 30px;
+	margin: 20px;
+}
+
+
 
 /* ----------------------------- Responsive histoire ----------------------------- */
 
@@ -482,7 +540,20 @@ h2{
 @media screen and (max-width: 1300px){
 	#zoneimage{
 		grid-template-columns: 1fr 1fr;
-	}		
+	}
+	.imagebox{
+		width: 55%;
+		margin-left: 22.5%;
+		margin-right: 22.5%;
+	}
+	.close{
+		width: 70px;
+		height: 70px;
+		right: 15%;
+	}
+	#commentaire{
+		width: 93%;
+	}
 }
 
 @media screen and (max-width: 800px){
@@ -505,6 +576,19 @@ h2{
 	#send{
 		width: 60px;
 	}
+	.imagebox{
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	.close{
+		width: 60px;
+		height: 60px;
+		right: 10%;
+	}
+	#commentaire{
+		width: 90%;
+	}
 }
 
 /* ----------------------- Responsive contact ----------------------- */
@@ -518,13 +602,13 @@ h2{
 
 /* ----------------------- Responsive blog ----------------------- */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
 	#zone_article{
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 	#zone_article{
 		grid-template-columns: 1fr;
 	}

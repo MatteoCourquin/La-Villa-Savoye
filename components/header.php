@@ -7,8 +7,13 @@
 	<img src="../assets/images/logos/burger.png" alt="logo burger" id="burger_ico">
 		
 	<ul id="menu">
-		
-		<li><a href="../pages/connected.php"><img src='../assets/images/logos/user.png' alt='logo user'></a></li>
+		<?php
+		if (isset($_SESSION['role'])){
+			?>
+			<li><a href="../pages/disconnect.php"><img src='../assets/images/logos/logout.png' alt='logo user'></a></li>
+			<?php } else{ ?>
+				<li><a href="../pages/connected.php"><img src='../assets/images/logos/user.png' alt='logo user'></a></li>
+		<?php } ?>
 		<li><a href="../pages/gallery.php">Gallery</a></li>
 		<li><a href="../pages/history.php">History</a></li>
 		<li><a href="../pages/blog.php">blog</a></li>

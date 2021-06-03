@@ -16,8 +16,8 @@ if (isset($_POST['email']) && isset($_POST['password'])){
             if (md5($password) === $data['password']){
                 
                 $_SESSION['user'] = $data['email'];
-                $_SESSION['role'] = $data['email'];
-                header('Location: ./blog.php');
+                $_SESSION['role'] = $data['role'];
+                header('Location: ../index.php');
             }else{
                 header('Location: login.php?login_err=password');
             }

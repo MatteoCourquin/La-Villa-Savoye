@@ -42,15 +42,15 @@
                 }
             ?>
 
-            <form action='login.php' method='post'>
+            <form action='login.php' method='post' id='form_connect'>
 
                 <h1>Connexion</h1>
 
-                <input type='email' name='email' placeholder='e-mail'>
+                <input type='email' name='email' class='champs' id='email_connect' placeholder='e-mail'>
 
-                <input type='password' name='password' placeholder='password'>
+                <input type='password' name='password' class='champs' id='password' placeholder='password'>
 
-                <button type='submit' class='btn-blue'>Connect</button>
+                <button type='submit' class='btn-blue' id='connect'>Connect</button>
 
             </form>
 
