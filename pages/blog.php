@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body class='light'>
 
   <?php include('../components/header.php'); ?>
   

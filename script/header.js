@@ -1,43 +1,44 @@
-// Menu burger :
+// Menu burger
 
-// J'appelle mes élements :
+// J'appelle mes élements
 
 var burger = document.getElementById('burger_ico');
 var menu = document.getElementById('menu');
 var croix = document.getElementById('croix');
 
 
-//Function :
+// Fonction
 
-// Ouvrir menu :
 
 function afficherMenu() {
-
+	
+	// Style du menu
 	var display = getComputedStyle(menu, null).display;
-
-	// Définition des valeurs CSS
+	
+	// Ouvrir menu
 	if (display == 'none') {
+		// Définition des valeurs CSS
         menu.style.display = 'block';
 		burger.style.display = 'none';
         croix.style.display = 'block';
-    }console.log('afficher');
+    } console.log('afficher');
 }
 
-// Fermer menuu
 
 function fermerMenu() {
-
+	
 	var display = getComputedStyle(menu, null).display;
 	
-	// Définition des valeurs CSS
+	// Fermer menu
 	if (display == 'block') {
+		// Définition des valeurs CSS
         menu.style.display = 'none';
 		burger.style.display = 'block';
-    }console.log('fermer');
+    } console.log('fermer');
 }
 
 
-//Events :
+// Évenements
 
 burger.addEventListener('click', afficherMenu);
 croix.addEventListener('click', fermerMenu);

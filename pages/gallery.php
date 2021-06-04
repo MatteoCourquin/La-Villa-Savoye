@@ -11,7 +11,7 @@
 		<meta charset="utf-8">
 	</head>
 
-	<body>
+	<body class='light'>
 		<header>
 			<?php include('../components/header.php'); ?>	
 		</header>

@@ -1,3 +1,4 @@
+<!-- Articles -->
 <div class='articles'>
     <div id="article1" class="article">
         <img src="../assets/images/article1.jpg">

@@ -1,3 +1,4 @@
+<!-- Démarre la session -->
 <?php session_start(); ?>
 
 <!DOCTYPE html>
@@ -10,7 +11,7 @@
 		<meta charset="utf-8">
 	</head>
 
-	<body>
+	<body class='light'>
 
 		<!-- Header -->
 		<?php include('../components/Header.php'); ?>
@@ -22,13 +23,12 @@
 					<h2>1929</h2>
 				</div>
 				
-				<img src="../assets/images/villa-savoye-day.jpg" alt="Image de la villa savoye" class="lavillasavoye" id="lavillasavoye_day">
-				<img src="../assets/images/villa-savoye-night.jpg" alt="Image de la villa savoye" class="lavillasavoye" id="lavillasavoye_night">
+				<div class='lavillasavoye_day'></div>
+				
 			</div>
 
 			<div id="texte">
-				<button id='btn_light'>Light</button>
-				<button id='btn_dark'>Dark</button>
+
 				<h3>La Villa Savoye :</h3>
 
 				<p class='p_history' >Villa Savoye is a villa located at 82, rue de Villiers, in the French town of Poissy, in Yvelines. Built from 1928 to 1931 by the architect Le Corbusier and his cousin Pierre Jeanneret. Rising on a plot of seven hectares, this construction, baptized “the Clear Hours” by its owners and described as a “living machine” by its architect, completes the period known as the architect's white villas. Characterized by its purity and harmony, this major building in the history of twentieth century architecture in the field of private individual residences, retains its avant-garde character. It consists of a white parallelepiped supported by thin piles and covered with band windows, topped with roof terraces. The site is inscribed, along with 16 other architectural works by Le Corbusier, on the UNESCO World Heritage List in 2016.</p>
@@ -45,5 +45,6 @@
 			</div>
 
 		</main>
+		<script src="../script/parralax.js"></script>
 	</body>
 </html>
