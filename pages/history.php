@@ -1,4 +1,4 @@
-<!-- Démarre la session -->
+<!-- Démarrage de session -->
 <?php session_start(); ?>
 
 <!DOCTYPE html>
@@ -13,10 +13,14 @@
 
 	<body class='light'>
 
-		<!-- Header -->
-		<?php include('../components/Header.php'); ?>
-
+		<header>
+			<!-- Header -->
+			<?php include('../components/Header.php'); ?>
+		</header>
+		
 		<main id='main'>
+
+			<!-- Zone titre -->
 			<div id="pres">
 				<div id="titre">
 					<h1>LA VILLA SAVOYE</h1>
@@ -27,8 +31,8 @@
 				
 			</div>
 
+			<!-- Zone histoire -->
 			<div id="texte">
-
 				<h3>La Villa Savoye :</h3>
 
 				<p class='p_history' >Villa Savoye is a villa located at 82, rue de Villiers, in the French town of Poissy, in Yvelines. Built from 1928 to 1931 by the architect Le Corbusier and his cousin Pierre Jeanneret. Rising on a plot of seven hectares, this construction, baptized “the Clear Hours” by its owners and described as a “living machine” by its architect, completes the period known as the architect's white villas. Characterized by its purity and harmony, this major building in the history of twentieth century architecture in the field of private individual residences, retains its avant-garde character. It consists of a white parallelepiped supported by thin piles and covered with band windows, topped with roof terraces. The site is inscribed, along with 16 other architectural works by Le Corbusier, on the UNESCO World Heritage List in 2016.</p>
@@ -43,8 +47,9 @@
 
 				In 1962, the city of Poissy ceded the house to the State. The awareness of the universal dimension of the villa led to its restoration from 1963. The classification procedure began during Le Corbusier's lifetime. The building is classified as historical monuments by decree of December 16, 1965, a few months after the death of its creator. After years of abandonment, at the instigation of the then Minister of Culture, André Malraux, restoration work was carried out and lasted until 1997. In 2015, the Center des monuments nationaux restored the lodge of the gardener and opens it to the public.</p>
 			</div>
-
 		</main>
+
+		<!-- script -->
 		<script src="../script/parralax.js"></script>
 	</body>
 </html>

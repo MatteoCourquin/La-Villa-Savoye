@@ -23,18 +23,24 @@ p {
 
 .dark {
   background: #333 !important;
-  color: white !important;
+  color: rgb(235, 75, 75) !important;
 }
 .light {
   background: #F1F1F1 !important;
-  color: black !important;
+  color: rgb(0, 0, 0) !important;
 }
 .btn-light{
   color: black !important;
-  background: #F1F1F1 !important;
+  background: #ffb4b4 !important;
+  border-radius: 10px;
+  border: none !important;
+  font-family: var(--exo) !important;
+  font-size: 15px !important;
+  font-weight: 100 !important;
+
 }
 .btn-light:hover{
-  background-color: white !important;
+  background-color: #ff3d3d !important;
   transition: 0.3s !important;
 }
 .lavillasavoye_day {

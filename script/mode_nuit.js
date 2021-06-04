@@ -1,17 +1,19 @@
-
 // dark mode
 
+// J'appelle mes élements
 var btnToggle = document.querySelector('.btn-toggle')
 var darkMode = document.querySelector('body')
 var btn = document.querySelector('.btn-blue')
 var h2 = document.querySelector('.dateTitle')
 
- btnToggle.addEventListener('click', (darkToggle) => {
+// fonction activer/désactiver
+btnToggle.addEventListener('click', (darkToggle) => {
 
+    // activation du dark mode
     if (darkMode.classList.contains('light')) {
-
+        
         console.log('dark');
-
+        
         btnToggle.innerHTML = '☼';
         
         var btn = document.querySelectorAll('.btn-blue')
@@ -28,6 +30,7 @@ var h2 = document.querySelector('.dateTitle')
         
         darkToggle.stopPropagation()
         
+    // rétablissement du mode jour
     } else if (darkMode.classList.contains('dark')) {
 
         console.log('light');

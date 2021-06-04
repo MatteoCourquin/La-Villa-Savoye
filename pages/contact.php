@@ -1,3 +1,4 @@
+<!-- Demarrage de session -->
 <?php session_start(); ?>
 
 <!DOCTYPE html>
@@ -13,13 +14,15 @@
 
 	<body class='light'>
 
-		<?php		
-		include('../components/Header.php');
-		?>
+		<header>
+			<!-- Header -->
+			<?php include('../components/Header.php');?>
+		</header>
 
+		<!-- Zone contact -->
 		<section id="zoneContact">
 
-			<form id="form_contact">
+			<form id="form_contact" class='light'>
 
 				<h1>CONTACT US</h1>
 
@@ -62,6 +65,7 @@
 			
 		</section>
 
+		<!-- script -->
 		<script type="text/javascript" src="../script/contact.js"></script>
 	</body>
 </html> 

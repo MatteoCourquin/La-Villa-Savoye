@@ -1,5 +1,4 @@
-//inportation de mes éléments :
-
+// J'appelle mes élements
 var zoneVerif1 = document.getElementById('zone_verif_1');
 var zoneVerif2 = document.getElementById('zone_verif_2');
 var zoneVerif3 = document.getElementById('zone_verif_3');
@@ -10,19 +9,21 @@ var email = document.getElementById('email');
 var tel = document.getElementById('phone');
 
 
-//fonctions :
-
+// verif mail
 function formatEmail(adresse) {
-  return /\S+@\S+\.\S+/.test(adresse);
+	return /\S+@\S+\.\S+/.test(adresse);
 }
 
+// verif phone
 function formatTel(tel) {
 	return /^(06|07)[0-9]{8}/gi.test(tel);
 }
 
+
+// fonctions affichage des erreurs pour le NAME
 function validation1() {
 	var message = '';
-
+	
 	if(nom.value.length < 3) {
 		message = message + 'The <strong>last name</strong> and <strong>first name</strong> must contain at least <strong>3</strong> characters.<br />';
 		zoneVerif1.innerHTML = message;
@@ -34,6 +35,7 @@ function validation1() {
 	}
 }
 
+// fonctions affichage des erreurs pour l' AGE
 function validation2() {
 	
 	var message = '';
@@ -49,6 +51,7 @@ function validation2() {
 	}
 }
 
+// fonctions affichage des erreurs pour l' E-MAIL
 function validation3() {
 	
 	var message = '';
@@ -64,6 +67,7 @@ function validation3() {
 	}
 }
 
+// fonctions affichage des erreurs pour le PHONE
 function validation4() {
 	
 	var message = '';
@@ -81,7 +85,6 @@ function validation4() {
 
 
 // événement :
-
 nom.addEventListener('keyup', validation1);
 age.addEventListener('keyup', validation2);
 email.addEventListener('keyup', validation3);
