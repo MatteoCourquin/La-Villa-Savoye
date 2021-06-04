@@ -22,7 +22,7 @@
 			
 			<?php
 
-				$pdo = new PDO('mysql:host=localhost;dbname=laVillaSavoye', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+			$pdo = new PDO('mysql:host=localhost;dbname=laVillaSavoye', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
 				function censure($censure){
 					return str_replace(array_map('trim', file('censure.txt')), '*****', $censure);
@@ -31,7 +31,8 @@
 				if(isset($_GET["id_commentarie"])){
 					$id = $_GET["id_commentarie"]; 
 					$pdo->exec("DELETE FROM comms WHERE id_commentarie =' . $id . '");
-				};                    
+				}
+				                  
 
 				if($_POST){
 					$_POST['pseudo'] = censure(addslashes(($_POST['pseudo'])));
@@ -43,15 +44,18 @@
 					
 					while($commentarie = $r->fetch(PDO::FETCH_ASSOC)) {
 						echo "<div id='zonecomm'>" .
-								"<div id='pseudo_date'>" . "<div id='pseudo'>" . $commentarie['pseudo'] . "</div>" . 
-								"<div id='date_heure'>" . $commentarie['date_heure'] . "</div>". "</div>" .
-								"<div id='commentaire'>" . $commentarie['message'] . "</div>";
+								"<div id='pseudo_date' class='light'>" . "<div id='pseudo'>" . $commentarie['pseudo'] . "</div>" . 
+								"<div id='date_heure'>" . $commentarie['date_heure'];
 								
 								if (isset($_SESSION['role']) && $_SESSION['role'] === 'ADMIN'){
 
-								"<a id='delete' href='galerie.php?id=" . $commentarie['id_commentarie']."'><img src='../assets/images/logos/croix.png' alt='croix' id='croixcomm'></a>".
-								"</div>";
-								}
+									echo "<a id='delete' href='galerie.php?id=" . $commentarie['id_commentarie']."'><img src='../assets/images/logos/croix.png' alt='croix' id='croixcomm'></a>".
+									"</div>";
+									}
+								
+						echo "</div>" . "</div>" . "<div id='commentaire'>" . $commentarie['message'] . "</div>";
+								
+								
 					} 
 			?>
 

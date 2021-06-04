@@ -195,6 +195,10 @@ header a:hover{
   grid-template-columns: 45% 55%;
 }
 
+.lavillasavoye_day{
+  position: absolute;
+}
+
 #titre {
   display: flex;
   flex-direction: column-reverse;
@@ -586,6 +590,12 @@ h2 {
   width: 100%;
   height: auto;
   border-radius: 15px;
+}
+
+#croixArticle{
+  width: 70px !important;
+  height: 70px !important;
+  position: absolute;
 }
 
 #zone_crearticle {

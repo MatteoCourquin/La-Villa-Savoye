@@ -40,10 +40,19 @@
                     
       $r = $db->query('SELECT * FROM article');
 
+      if(isset($_GET["id_article"])){
+        $id = $_GET["id_article"]; 
+        $pdo->exec("DELETE FROM article WHERE id_article =' . $id . '");
+      }
+
       while ($article = $r->fetch(PDO::FETCH_ASSOC)) {
       ?>
         <div class='articles'>
           <div id='article<?php echo $article['id_article']; ?>' class='article'>
+          <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'ADMIN'){ ?>
+
+            <a id='delete' href='galerie.php?id= <?php $id['id_article'] ?>'><img src='../assets/images/logos/croix.png' alt='croix' id='croixArticle'></a>
+            <?php } ?>
             <img  src='<?php echo $article['image']; ?>'>
             <h1> <?php echo $article['title']; ?> </h1>
             <p class='texte_article' id='texte_article<?php echo $article['id_article']; ?>'> <?php echo $article['content']; ?> </p>

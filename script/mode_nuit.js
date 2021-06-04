@@ -4,7 +4,6 @@
 var btnToggle = document.querySelector('.btn-toggle')
 var darkMode = document.querySelector('body')
 var btn = document.querySelector('.btn-blue')
-var imgToggle = document.querySelector('.lavillasavoye_day')
 var h2 = document.querySelector('.dateTitle')
 
  btnToggle.addEventListener('click', (darkToggle) => {
@@ -14,12 +13,6 @@ var h2 = document.querySelector('.dateTitle')
         console.log('dark');
 
         btnToggle.innerHTML = '☼';
-        
-        var imgToggle = document.querySelectorAll('.btn-blue')
-        imgToggle.forEach(imgToggle => {
-            imgToggle.classList.add('lavillasavoye_day')
-            imgToggle.classList.remove('lavillasavoye_night')
-        });
         
         var btn = document.querySelectorAll('.btn-blue')
         btn.forEach(btn => {
@@ -40,12 +33,6 @@ var h2 = document.querySelector('.dateTitle')
         console.log('light');
         
         btnToggle.innerHTML = '☾';
-
-        var imgToggle = document.querySelectorAll('.btn-blue')
-        imgToggle.forEach(imgToggle => {
-            imgToggle.classList.add('lavillasavoye_night')
-            imgToggle.classList.remove('lavillasavoye_day')
-        });
         
         var btn = document.querySelectorAll('.btn-light')
         btn.forEach(btn => {
